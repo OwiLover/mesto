@@ -22,7 +22,7 @@
 
 ### Github Pages
 
-* Ссылка на страницу сайта в Github Pages (появится, как пройдёт первый коммит)
+* [Ссылка на страницу сайта в Github Pages](https://owilover.github.io/mesto/)
 
 ## To Do-List
 

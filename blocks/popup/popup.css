@@ -1,0 +1,19 @@
+.popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 21.65493vh 19px;
+    z-index: 0;
+    display: none;
+    background-color: rgb(0,0,0,0.5);
+}
+
+/* Пришлось хорошенько подумать, чтобы сделать всё без псевдоэлемента :) */
+
+@media screen and (min-width: 918px) {
+    .popup {
+        padding: 27.083333vh 33.203125%;
+    }
+}

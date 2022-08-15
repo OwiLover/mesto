@@ -1,4 +1,4 @@
-.pop-up__header {
+.popup__header {
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (min-width: 918px) {
-    .pop-up__header {
+    .popup__header {
         font-size: 24px;
         line-height: 29px;
     }
