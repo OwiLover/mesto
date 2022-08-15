@@ -1,0 +1,23 @@
+.pop-up__field {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 0 0 13px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+    margin-top: 30px;
+     /*РГБ сделан в качестве исключения, поскольку не нашёл способа регулировать прозрачность, не затрагивая текст  */
+}
+
+.pop-up__field:first-of-type {
+    margin-top: 75px;
+}
+
+@media screen and (min-width: 918px) {
+    .pop-up__field:first-of-type {
+        margin-top: 54px;
+    }
+}

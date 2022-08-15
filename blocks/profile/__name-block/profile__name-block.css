@@ -1,0 +1,11 @@
+.profile__name-block {
+    position: relative;
+    display: flex;
+    margin: auto;  
+}
+
+@media screen and (min-width: 918px) {
+    .profile__name-block {
+        margin: 0;
+    }
+}
