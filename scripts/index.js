@@ -1,41 +1,34 @@
 let profile = document.querySelector('.profile');
 let profileEditButton = profile.querySelector('.profile__edit-button');
+let names = profile.querySelector('.profile__name');
+let statuses = profile.querySelector('.profile__status');
  
 let popup = document.querySelector('.popup');
-let popupField = popup.querySelector('.popup__field');
-// let popupSubmitButton = popup.querySelector('.popup__submit');
 let popupForm = popup.querySelector('.popup__form');
+let popupName = popup.querySelector('#popup__field-name');
+let popupStatus = popup.querySelector('#popup__field-status');
 let popupCloseButton = popup.querySelector('.popup__close-button');
 
-function show_popup () {
-    let name = profile.querySelector('.profile__name');
-    let status = profile.querySelector('.profile__status');
-    let popupName = popup.querySelector('#popup__field-name');
-    let popupStatus = popup.querySelector('#popup__field-status');
-    popupName.value = name.textContent;
-    popupStatus.value = status.textContent;
+
+function showPopup () {
+    popupName.value = names.textContent;
+    popupStatus.value = statuses.textContent;
     popup.classList.add('popup_opened');
 }
 
-function close_popup () {
+function closePopup () {
     popup.classList.remove('popup_opened');
 }
 
-function edit_profile (evt) {
+function editProfile (evt) {
     evt.preventDefault()
-    let name = profile.querySelector('.profile__name');
-    let status = profile.querySelector('.profile__status');
-    let popupName = popup.querySelector('#popup__field-name');
-    let popupStatus = popup.querySelector('#popup__field-status');
-    name.textContent = popupName.value;
-    status.textContent = popupStatus.value;
-    close_popup();
+    names.textContent = popupName.value;
+    statuses.textContent = popupStatus.value;
+    closePopup();
 }
 
-profileEditButton.addEventListener('click', show_popup);
+profileEditButton.addEventListener('click', showPopup);
 
-popupCloseButton.addEventListener('click', close_popup);
+popupCloseButton.addEventListener('click', closePopup);
 
-popupForm.addEventListener('submit', edit_profile);
-
-// popupSubmitButton.addEventListener('click', edit_profile);
+popupForm.addEventListener('submit', editProfile);
